@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+    <!-- Metadados da página -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 (suporta todos os caracteres especiais) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Garante que a página seja responsiva em dispositivos móveis -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Garante que a página seja renderizada corretamente no Internet Explorer -->
+
+    <title>Página RA e Senha</title> <!-- Define o título da página que aparecerá na aba do navegador -->
+
+    <!-- Link para o arquivo CSS que será utilizado na página -->
+    <link rel="stylesheet" href="../css/style-paginaRA.css"> 
+
+    <!-- Link para a biblioteca de ícones FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Container principal onde o conteúdo da página é exibido -->
+    <div class="container">
+        <!-- Título principal da página -->
+        <h1>Digite seu RA e Senha</h1>
+
+        <!-- Formulário para envio de dados -->
+        <form action="processar_dados.php" method="POST">
+            <!-- Campo para inserir o RA -->
+            <label for="ra">RA:</label> <!-- Rótulo do campo -->
+            <input type="text" id="ra" name="ra" required placeholder="Digite seu RA"> <!-- Campo de texto onde o usuário digita seu RA -->
+
+            <!-- Campo para inserir a Senha -->
+            <label for="senha">Senha:</label> <!-- Rótulo do campo -->
+            <input type="password" id="senha" name="senha" required placeholder="Digite sua senha"> <!-- Campo de senha onde o usuário digita sua senha -->
+
+            <!-- Botão para enviar os dados -->
+            <button type="submit" class="btn">Entrar</button> <!-- Botão que envia o formulário -->
+        </form>
+
+        <!-- Link para voltar para a página de cadastro -->
+        <a href="../cadastro.html" class="btn">Voltar</a> <!-- Link que redireciona o usuário para a página de cadastro -->
+    </div>
+</body>
+</html>

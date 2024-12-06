@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("header.css");
+@import url("home.css");
+@import url("menu.css");
+@import url("testimonials.css");
+@import url("footer.css");
+
+:root {
+  --color-primary-1: #dceed0;
+  --color-primary-2: #c3e2ad;
+  --color-primary-3: #9cff8f;
+  --color-primary-4: #1ae921;
+  --color-primary-5: #1ae921;
+  --color-primary-6: #1ad10d;
+
+  --color-neutral-0: #ffffff;
+  --color-neutral-1: #1d1d1d;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-primary-1);
+}
+
+section {
+  padding: 28px 8%;
+}
+
+.btn-default {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary-5);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 600;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-default:hover {
+  background-color: var(--color-primary-3);
+}
+
+.social-media-buttons {
+  display: flex;
+  gap: 18px;
+}
+
+.social-media-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 40px;
+  background-color: var(--color-neutral-0);
+  font-size: 1.25rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--color-neutral-1);
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.social-media-buttons a:hover {
+  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  color: var(--color-primary-6);
+  font-size: 1.563rem;
+}
+.section-title-aboutus {
+  color: var(--color-primary-6);
+  font-size: 1.563rem;
+}
+.section-subtitle {
+  font-size: 2.1875rem;
+}
+img {
+  border-top-left-radius: 0%;
+  border-top-right-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+}
+.nav-item.logo {
+  margin-right: auto;
+}
+
+/* Estilo para a seção de doações */
+#doacoes {
+  background-color: var(--color-neutral-0);
+  text-align: center;
+  padding: 50px 0;
+}
+
+#doacoes h1 {
+  color: var(--color-primary-6);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#doacoes p {
+  font-size: 1.25rem;
+  color: var(--color-neutral-1);
+  margin-bottom: 40px;
+}
+
+/* Centraliza a imagem quadrada e as informações bancárias */
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.imagem-quadrada {
+  width: 200px; /* Define o tamanho da imagem quadrada */
+  height: 200px;
+  object-fit: cover; /* Garantir que a imagem cubra o espaço sem distorcer */
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* Estilo das informações da conta */
+.informacoes-conta {
+  text-align: center;
+  font-size: 1.125rem;
+  color: var(--color-neutral-1);
+}
+
+.informacoes-conta p {
+  margin-bottom: 10px;
+}
+
+.informacoes-conta strong {
+  font-weight: 600;
+}
+
+/* Estilo para o formulário de doação */
+#donation-form {
+  background-color: var(--color-neutral-0);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+#donation-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: var(--color-neutral-1);
+}
+
+#donation-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  color: var(--color-neutral-1);
+}
+
+#donation-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--color-primary-4);
+  color: var(--color-neutral-0);
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#donation-form button:hover {
+  background-color: var(--color-primary-5);
+}
+
+/* Outros estilos... */
+
+/* Estilos para as mensagens de sucesso e erro */
+.message {
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/*logo*/
+
+#nav_logo {
+  display: flex; /* Usar flexbox para alinhar o logo e o texto */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 10px; /* Espaço entre o logo e o texto */
+}
+
+#logo_img {
+  height: 40px; /* Ajuste o tamanho do logo */
+  width: auto; /* A largura será ajustada automaticamente para manter a proporção */
+}
+
+#nav_logo span {
+  font-size: 1.25rem; /* Ajuste o tamanho do texto */
+  font-weight: bold; /* Deixar o texto mais destacado */
+  color: var(--color-neutral-1); /* Cor do texto */
+}
+
+/*comentários*/
+#comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--color-neutral-0);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+#comment-form label {
+  font-size: 1.125rem;
+  color: var(--color-neutral-1);
+}
+
+#comment-form input,
+#comment-form textarea {
+  padding: 12px;
+  border: 1px solid var(--color-neutral-1);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--color-neutral-1);
+  background-color: var(--color-neutral-0);
+}
+
+#comment-form button {
+  background-color: var(--color-primary-5);
+  color: var(--color-neutral-0);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.125rem;
+  transition: background-color 0.3s ease;
+}
+
+#comment-form button:hover {
+  background-color: var(--color-primary-3);
+}
+
+#comentarios-enviados {
+  margin-top: 40px;
+}
+
+#comentarios-lista {
+  margin-top: 20px;
+}
+
+.comentario-item {
+  background-color: var(--color-primary-2);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comentario-item p {
+  font-size: 1rem;
+  color: var(--color-neutral-1);
+}
+
+.comentario-item .nome {
+  font-weight: bold;
+  font-size: 1.125rem;
+}

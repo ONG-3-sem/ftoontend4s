@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+    <!-- Metadados da página -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 (suporta todos os caracteres especiais) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Faz com que a página seja responsiva em dispositivos móveis -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Garante que a página seja renderizada corretamente no Internet Explorer -->
+    
+    <title>Login</title> <!-- Define o título da página que aparece na aba do navegador -->
+
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Link para a biblioteca de ícones FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container"> <!-- Div principal que contém toda a estrutura -->
+        
+        <!-- Primeira seção de conteúdo -->
+        <div class="content first-content">
+            
+            <!-- Primeira coluna do conteúdo -->
+            <div class="first-column">
+                <h2 class="title title-primary">Bem-vindo de volta!</h2> <!-- Título da seção -->
+                <p class="description description-primary">Para se manter ligado a nós</p> <!-- Descrição de boas-vindas -->
+                <p class="description description-primary">Faça o login com os seus dados pessoais</p> <!-- Mais instruções -->
+
+                <!-- Botões de navegação -->
+                <div class="buttons">
+                    <button id="signin" class="btn btn-primary">Login</button> <!-- Botão de login -->
+                    <a href="paginas/paginaRAeSenha.html" class="btn btn-primary">Sou Aluno</a> <!-- Link para página de aluno -->
+                    <a href="../index.html" class="btn btn-primary no-underline">Voltar</a> <!-- Link para voltar -->
+                </div>
+            </div>
+
+            <!-- Segunda coluna do conteúdo -->
+            <div class="second-column">
+                <h2 class="title title-second">Crie sua conta</h2> <!-- Título para o formulário de cadastro -->
+                <div class="social-media"> <!-- Seção de mídias sociais -->
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#"></a> <!-- Link para rede social (não funcional aqui) -->
+                    </ul>
+                </div>
+                <!-- Formulário de cadastro -->
+                <form class="form">
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i> <!-- Ícone do usuário -->
+                        <input type="text" placeholder="Nome"> <!-- Campo de texto para nome -->
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i> <!-- Ícone de email -->
+                        <input type="email" placeholder="Email"> <!-- Campo de email -->
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i> <!-- Ícone de senha -->
+                        <input type="password" placeholder="Senha"> <!-- Campo de senha -->
+                    </label>
+                    
+                    <button class="btn btn-second">Cadastre-se</button> <!-- Botão para enviar o formulário -->
+                </form>
+            </div>
+        </div>
+
+        <!-- Segunda seção de conteúdo (login) -->
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title title-second">Crie sua conta</h2> <!-- Título de criação de conta -->
+                <h2 class="title title-primary">Olá!</h2> <!-- Título de saudação -->
+                <p class="description description-primary">Introduza os seus dados pessoais</p> <!-- Instruções -->
+                <p class="description description-primary">e começar a viajar connosco</p> <!-- Mais instruções -->
+
+                <button id="signup" class="btn btn-primary">Cadastre-se</button> <!-- Botão para cadastro -->
+            </div>
+
+            <!-- Segunda coluna do conteúdo -->
+            <div class="second-column">
+                <h2 class="title title-second"></h2> <!-- Título vazio, possivelmente um espaço para futuros ajustes -->
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#"></a> <!-- Link para rede social -->
+                    </ul>
+                </div>
+                <!-- Formulário de login -->
+                <form class="form">
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i> <!-- Ícone de email -->
+                        <input type="email" placeholder="Email"> <!-- Campo de email -->
+                    </label>
+                
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i> <!-- Ícone de senha -->
+                        <input type="password" placeholder="Senha"> <!-- Campo de senha -->
+                    </label>
+                
+                    <a class="password" href="#">Esqueceu a sua senha?</a> <!-- Link para recuperação de senha -->
+                    <button class="btn btn-second">Login</button> <!-- Botão para login -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link para o arquivo JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>
